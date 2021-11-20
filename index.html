@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Puzzle JQuery</title>
+	<link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="background"></div>
+		<div id="container">
+			<div class="header">
+				<h1 id="countdown" class="countdown">01:00</h1>
+				<div class="modal">
+					<p class="modal-text">Are you sure? There is still time!</p>
+					<p class="modal-timer"></p>
+					<form>
+						<input type="button" id='close' class="btn close" value="CLOSE">
+						<input type="button" id='checkResult' class="btn checkResult" value="CHECK">
+					</form>
+				</div>
+			</div>
+			<div class="puzzle-container">
+				<div id="pieceContainer"></div>
+				<div id="puzzleContainer">
+				</div>
+			</div>
+			<div class="buttons">
+				<form>
+					<input type="button" id='btnStart' class="btn start" value="START">
+					<input type="button" id='btnReset' class="btn reset" value="RESET">
+					<input type="button" id='btnCheck' class="btn check" value="CHECK" disabled>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="./script/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="./script/script.js"></script>
+</body>
+
+</html>
